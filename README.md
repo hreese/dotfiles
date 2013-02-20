@@ -4,12 +4,7 @@ My personal dotfiles.
 
 ## Installation ##
 
-1. Create ~/.dotfiles
+1. Clone this repo into $HOME
 
-    mkdir ~/.dotfiles
-2. Clone this repo into ~/.dotfiles
-
-    cd ~/.dotfiles
+    cd 
     git clone ...
-
-3. Create symlinks for all dotfiles you like.
