@@ -56,8 +56,8 @@ fi
 
 # dircolors (Solarized)
 # https://github.com/seebi/dircolors-solarized
-if [ -r "$HOME/.dotfiles/dircolors-solarized/dircolors.256dark" ]; then
-    eval $(dircolors -b "$HOME/.dotfiles/dircolors-solarized/dircolors.256dark")
+if [ -r "$HOME/.dircolors-solarized/dircolors.256dark" ]; then
+    eval $(dircolors -b "$HOME/.dircolors-solarized/dircolors.256dark")
 fi
 
 # needed by the gpg-vim-plugin
@@ -66,3 +66,5 @@ export GPG_TTY=$(tty)
 # some aliases
 alias lsh='ls -lthr'
 alias lsha='ls -lthra'
+alias g='git'
+alias s='ssh'
