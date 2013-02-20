@@ -43,7 +43,9 @@ fi
 
 # dircolors (Solarized)
 # https://github.com/seebi/dircolors-solarized
-# …
+if [ -r ~/.dotfiles/dircolors-solarized/dircolors.256dark ]; then
+    eval $(dircolors -b ~/.dotfiles/dircolors-solarized/dircolors.256dark)
+fi
 
 # some aliases
 alias lsh='ls -lthr'
