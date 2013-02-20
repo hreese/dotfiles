@@ -22,3 +22,9 @@
 [submodule ".themes/gedit-solarized"]
 	path = .themes/gedit-solarized
 	url = git://github.com/mattcan/solarized-gedit.git
+[submodule ".themes/mc-solarized-skin"]
+	path = .themes/mc-solarized-skin
+	url = git://github.com/nkulikov/mc-solarized-skin.git
+[submodule "/home/sprawl/.vim/bundle/vundle"]
+	path = /home/sprawl/.vim/bundle/vundle
+	url = git://github.com/gmarik/vundle.git

@@ -1,1 +1,10 @@
 set completion-ignore-case on
+
+"\e[6~": end-of-history
+"\e[5~": beginning-of-history
+
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+

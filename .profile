@@ -69,4 +69,5 @@ alias lsha='ls -lthra'
 alias g='git'
 alias s='ssh'
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
+alias mc='mc -S ~/.themes/mc-solarized-skin/solarized.ini'
 
