@@ -1,0 +1,11 @@
+[user]
+	name       = Heiko Reese
+	email      = mail@heiko-reese.de
+	signingkey = 0x1FDD301FB636D58B
+[core]
+	editor     = vim
+    whitespace = fix, trailing-space
+[color]
+	ui = true
+[include]
+    path = ~/.gitconfig.github
