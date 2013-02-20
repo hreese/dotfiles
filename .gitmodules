@@ -19,3 +19,6 @@
 [submodule ".themes/gnome-terminal-colors-solarized"]
 	path = .themes/gnome-terminal-colors-solarized
 	url = git://github.com/sigurdga/gnome-terminal-colors-solarized.git
+[submodule ".themes/gedit-solarized"]
+	path = .themes/gedit-solarized
+	url = git://github.com/mattcan/solarized-gedit.git

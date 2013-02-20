@@ -12,3 +12,6 @@ My personal dotfiles.
     git submodule update --init --recursive
     
     .themes/gnome-terminal-colors-solarized/solarize
+    mkdir -p ~/.local/share/gedit/styles
+    cd ~/.local/share/gedit/styles
+    for i in ../../../../.themes/gedit-solarized/*xml; do ln -s ${i} .; done
