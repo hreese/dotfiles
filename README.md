@@ -10,4 +10,4 @@ My personal dotfiles.
     git init
     git remote add origin git@github.com:hreese/dotfiles.git
     git pull origin master
-
+    git submodule update --init --recursive
