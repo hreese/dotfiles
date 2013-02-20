@@ -14,3 +14,5 @@ My personal dotfiles.
     mkdir -p ~/.local/share/gedit/styles
     cd ~/.local/share/gedit/styles
     for i in ../../../../.themes/gedit-solarized/*xml; do ln -s ${i} .; done
+    
+    

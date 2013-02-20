@@ -28,3 +28,6 @@
 [submodule "/home/sprawl/.vim/bundle/vundle"]
 	path = /home/sprawl/.vim/bundle/vundle
 	url = git://github.com/gmarik/vundle.git
+[submodule "/home/sprawl/.oh-my-zsh"]
+	path = /home/sprawl/.oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
