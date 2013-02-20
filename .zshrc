@@ -32,14 +32,14 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(cp git github gnu-utils history python rsync screen systemd taskwarrior urltools vundle yum)
+plugins=(autojump cp dircycle git git-flow github gpg-agent gnu-utils history history-substring-search python rsync screen systemd svn taskwarrior urltools vundle yum)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-
-. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 if [ -e ~/.zshrc.local ]; then
     . ~/.zshrc.local
 fi
+
+# Customize to your needs...
+
+. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
