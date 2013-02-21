@@ -60,6 +60,10 @@ if [ -r "$HOME/.dircolors-solarized/dircolors.256dark" ]; then
     eval $(dircolors -b "$HOME/.dircolors-solarized/dircolors.256dark")
 fi
 
+# colorize grep matches
+export GREP_OPTIONS="--color=always ${GREP_OPTIONS}"
+export GREP_COLOR=31
+
 # needed by the gpg-vim-plugin
 export GPG_TTY=$(tty)
 
@@ -69,5 +73,5 @@ alias lsha='ls -lthra'
 alias g='git'
 alias s='ssh'
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
-alias mc='mc -S ~/.themes/mc-solarized-skin/solarized.ini'
+export MC_SKIN="$HOME/.themes/mc-solarized-skin/solarized.ini"
 

@@ -9,3 +9,5 @@
 	ui = true
 [include]
     path = ~/.gitconfig.github
+[push]
+	default = simple
