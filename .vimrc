@@ -74,13 +74,14 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdtree'
-Bundle 'spolu/dwm.vim'
+"Bundle 'spolu/dwm.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-sensible'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'vimoutliner/vimoutliner'
+Bundle 'sjl/gundo.vim'
 
 if has("python")
     Bundle 'Lokaltog/vim-powerline'
