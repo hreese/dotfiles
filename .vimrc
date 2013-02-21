@@ -6,7 +6,7 @@ set showmatch                                  " show matching parens
 set nocursorline
 set nocursorcolumn
 set ruler
-set laststatus=2                               " always show tatus
+set laststatus=2                               " always show status
 set backspace=2
 set noerrorbells
 set history=5000
@@ -54,7 +54,7 @@ set incsearch      " Inkrementelle Suche von Teilergebnissen
 set noedcompatible
 set nogdefault     " g ist nicht Standard bei :s/foo/bar
 
-" --- Vundle (https://github.com/gmarik/vundle) -------------------------
+" --- Vundle
 "
 filetype off                   " required!
 
@@ -71,17 +71,19 @@ Bundle 'Shougo/neosnippet.git'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'kien/ctrlp.vim'
+Bundle 'myusuf3/numbers.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'spolu/dwm.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-sensible'
 Bundle 'tsaleh/vim-supertab'
+Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vimoutliner/vimoutliner'
-Bundle 'sjl/gundo.vim'
 
 if has("python")
     Bundle 'Lokaltog/vim-powerline'
@@ -93,7 +95,8 @@ Bundle 'gnupg'
 
 filetype plugin indent on     " required!
 
-" --- NeoComplCache --------------------------------------------
+" --- NeoComplCache 
+"
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_auto_select = 1
 let g:neocomplcache_enable_smart_case = 1
@@ -116,22 +119,28 @@ nmap <Leader>nce :NeoComplCacheEnable<CR>
 nmap <Leader>ncd :NeoComplCacheDisable<CR>
 
 " --- powerline 
+"
 " let g:Powerline_symbols = 'fancy'
 
 " --- ctrlp.vim
+"
 let g:ctrlp_extensions = ['buffertag']
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules\|\.git$\|\.hg$\|\.svn$\|^CVS$' }
 
-" --- omni completion -------------------------------------------------------
+" --- omni completion
 "
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menu
 
-" --- gnupg -----------------------------------------------------------------
+" --- gnupg
 let g:GPGUsePipes = 1
 let g:GPGPreferArmor = 1
 let g:GPGPreferSign = 1
 let g:GPGDefaultRecipients = [ "cert@kit.edu", "andreas.lorenz@kit.edu", "heiko.reese@kit.edu", "simon.weis@kit.edu", "tobias.dussa@kit.edu", "ulrich.stadie@kit.edu", "ursula.epting@kit.edu" ]
+
+" --- gundo
+"
+let g:gundo_width = 60
 
 " --- highlighting, colors, fonts -------------------------------------------
 "
@@ -141,8 +150,8 @@ set background=dark
 colorscheme solarized
 
 if has("gui_running")
-    set lines=60 " bißchen höher im GUI-Modus
-    set columns=120 " und ein bißchen breiter
+    set lines=60
+    set columns=120
     set guifont=Inconsolata\ Medium\ 12
     set guioptions-=m
     set guioptions-=T  " hide toolbar
@@ -216,3 +225,6 @@ set comments+=:-\
 nnoremap Q gqap
 " reflow visually highlighted lines with Q:
 vnoremap Q gq
+
+" Gundo on F5
+nnoremap <F5> :GundoToggle<CR>
