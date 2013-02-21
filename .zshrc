@@ -36,10 +36,16 @@ plugins=(cp dircycle git git-flow github gpg-agent gnu-utils history history-sub
 
 source $ZSH/oh-my-zsh.sh
 
+if [ -e ~/.profile ]; then
+    . ~/.profile
+fi
+
 if [ -e ~/.zshrc.local ]; then
     . ~/.zshrc.local
 fi
 
 # Customize to your needs...
 
-. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+if [ -e ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then
+    . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
