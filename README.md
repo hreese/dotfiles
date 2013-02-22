@@ -13,6 +13,7 @@ My personal dotfiles.
 ### vim ###
     
     vim +BundleInstall +qall
+    mkdir ~/.undodir_vim
 
 ### gnome-terminal ###
 

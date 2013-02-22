@@ -23,6 +23,8 @@ set tags=tags
 set ttyfast
 let mapleader = ","
 
+set encoding=utf-8
+
 " --- formating ---------------------------------------------------------
 "
 set autoindent
@@ -120,7 +122,8 @@ nmap <Leader>ncd :NeoComplCacheDisable<CR>
 
 " --- powerline 
 "
-" let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'unicode'
+"let g:Powerline_symbols = 'fancy'
 
 " --- ctrlp.vim
 "
@@ -141,6 +144,7 @@ let g:GPGDefaultRecipients = [ "cert@kit.edu", "andreas.lorenz@kit.edu", "heiko.
 " --- gundo
 "
 let g:gundo_width = 60
+let g:gundo_right = 1
 
 " --- highlighting, colors, fonts -------------------------------------------
 "
