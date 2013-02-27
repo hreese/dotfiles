@@ -48,7 +48,7 @@ if [ -d "${HOME}/go" ]; then
 fi
 
 # 256 colors
-if [ -e /lib/terminfo/x/xterm-256color ]; then
+if [ -e /lib/terminfo/x/xterm-256color -o -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
 else
     export TERM='xterm-color'

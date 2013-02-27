@@ -1,9 +1,7 @@
-bind s
-hardstatus on
-hardstatus alwayslastline
-hardstatus string "%{wk}%{kW}|%{-} {%{Yk}%D %m-%d-%y%{-} %{Wk}%C%a%{-}} {%{Gk}%H%{-} %l} %{kW}|%{-}%{wb} %-w %{Wr}[%n %t]%{-} %+w%=%{kW}|%{-}"
-termcapinfo xterm ti@:te@
+defutf8 on
+utf8 on on
 startup_message off
+term "screen-256color"
 
 # allow bold colors
 attrcolor b ".I"
