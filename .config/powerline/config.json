@@ -19,15 +19,15 @@
 			"theme": "default"
 		},
 		"shell": {
-			"colorscheme": "solarized",
+			"colorscheme": "default",
 			"theme": "default"
 		},
 		"tmux": {
-			"colorscheme": "solarized",
+			"colorscheme": "default",
 			"theme": "default"
 		},
 		"vim": {
-			"colorscheme": "solarized",
+			"colorscheme": "default",
 			"theme": "default",
 			"local_themes": {
 				"cmdwin": "cmdwin",
