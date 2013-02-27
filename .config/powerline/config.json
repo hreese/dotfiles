@@ -11,7 +11,7 @@
 				"soft": " "
 			}
 		},
-		"spaces": 1
+		"spaces": 0
 	},
 	"ext": {
 		"ipython": {
@@ -19,15 +19,15 @@
 			"theme": "default"
 		},
 		"shell": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"tmux": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"vim": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default",
 			"local_themes": {
 				"cmdwin": "cmdwin",
