@@ -31,7 +31,12 @@ My personal dotfiles.
 
     # Fedora
     sudo yum install pip-python -y
-    pip-python install --user git+git://github.com/Lokaltog/powerline
+    python-pip install --user git+git://github.com/Lokaltog/powerline
     # rest
     pip install --user git+git://github.com/Lokaltog/powerline
 
+### Oh-My-Zsh ###
+    # https://github.com/zsh-users/zsh-syntax-highlighting
+    mkdir -p ~/.oh-my-zsh/custom/plugins
+    cd ~/.oh-my-zsh/custom/plugins
+    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
