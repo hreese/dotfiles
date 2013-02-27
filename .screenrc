@@ -1,7 +1,18 @@
+# make sure to use utf-8 so that my vim will work properly (unicode
+# invisible characters)
 defutf8 on
 utf8 on on
-startup_message off
+
+# default to 256 color terminal
 term "screen-256color"
+
+# Disable annoying startup message
+startup_message off
+
+# Automatically detach on hangup.
+autodetach on
 
 # allow bold colors
 attrcolor b ".I"
+
+hardstatus alwayslastline '%{= M}%H%{= G} %l %= %{= w}%-w%{+b r}%n*%t%{-br}%{w}%+w %= %{c}%d %D %{B}%c'
