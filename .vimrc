@@ -1,22 +1,23 @@
 " --- general -----------------------------------------------------------
 "
-set nocompatible                               " be iMproved
+set nocompatible   " be iMproved
+scriptencoding utf-8
 set modeline
-set showmatch                                  " show matching parens
+set showmatch      " show matching parens
 set nocursorline
 set nocursorcolumn
 set ruler
-set laststatus=2                               " always show status
+set laststatus=2   " always show status
 set backspace=2
 set noerrorbells
 set history=5000
-set wildmenu
+set wildmenu       " display suggestions above command line
 set wildignore+=*/.git/*,*/.bzr/*,*~,*/build/*
 set hidden
 set scrolloff=2
 set sidescrolloff=2
 if has("mouse")
-    set mouse=a
+    set mouse=v    " enable mouse for visual mode only
     set mousehide
 endif
 set tags=tags
@@ -28,7 +29,7 @@ set encoding=utf-8
 " --- formating ---------------------------------------------------------
 "
 set autoindent
-set si
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -42,7 +43,7 @@ set tw=80
 " --- folding ---------------------------------------------------------------
 "
 set nofoldenable
-set foldmethod=indent
+set foldmethod=syntax
 set fillchars=fold:\
 
 " --- searching -------------------------------------------------------------
@@ -86,6 +87,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tsaleh/vim-supertab'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vimoutliner/vimoutliner'
+Bundle 'samsonw/vim-task'
 
 if has("python")
     Bundle 'Lokaltog/vim-powerline'
@@ -145,6 +147,17 @@ let g:GPGDefaultRecipients = [ "cert@kit.edu", "andreas.lorenz@kit.edu", "heiko.
 "
 let g:gundo_width = 60
 let g:gundo_right = 1
+
+" --- nerdtree
+"
+let NERDTreeChDirMode=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeIgnore=['\~$', '\.pyc$', '^.sass-cache$']
+let NERDTreeMapJumpNextSibling=''
+let NERDTreeMapJumpPrevSibling=''
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
 
 " --- highlighting, colors, fonts -------------------------------------------
 "
