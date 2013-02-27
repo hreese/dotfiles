@@ -31,7 +31,7 @@ My personal dotfiles.
 
     # Fedora
     sudo yum install pip-python -y
-    pip-python install --user git+git://github.com/Lokaltog/powerline
+    python-pip install --user git+git://github.com/Lokaltog/powerline
     # rest
     pip install --user git+git://github.com/Lokaltog/powerline
 
