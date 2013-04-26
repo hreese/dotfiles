@@ -88,6 +88,7 @@ Bundle 'tsaleh/vim-supertab'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vimoutliner/vimoutliner'
 Bundle 'samsonw/vim-task'
+Bundle 'sirtaj/vim-openscad'
 
 if has("python")
     Bundle 'Lokaltog/vim-powerline'
