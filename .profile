@@ -45,6 +45,7 @@ if [ -d "${HOME}/go" ]; then
     export GOOS=linux
     export GOARCH=amd64
     export PATH=${PATH}:${GOBIN}
+    export GOROOT=$HOME/go.heiko
 fi
 
 # 256 colors
