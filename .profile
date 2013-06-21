@@ -40,6 +40,7 @@ export INFOPATH=/usr/local/texlive/2012/texmf/doc/info:$INFOPATH
 
 # Google Go
 if [ -d "${HOME}/go" ]; then
+    export GOPATH=$HOME/gocode
     export GOROOT=${HOME}/go
     export GOBIN=${GOROOT}/bin
     export GOOS=linux

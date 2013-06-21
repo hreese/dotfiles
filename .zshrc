@@ -15,7 +15,7 @@ ZSH_THEME="agnoster"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -27,7 +27,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"  
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -45,6 +45,12 @@ if [ -e ~/.zshrc.local ]; then
 fi
 
 # Customize to your needs...
+unsetopt correct_all
+
+alias lsh='ls -lthr'
+
+# Solarized colors
+eval $(dircolors ~/.dir_colors)
 
 if [ -e ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then
     . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
