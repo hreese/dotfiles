@@ -198,16 +198,7 @@ for_window [class="psi" window_role="main"] focus; resize shrink width 50 ppt
 for_window [class="psi" window_role="tabs"] resize grow width 0 px or 30 ppt
 for_window [class="VirtualBox"] floating enable
 for_window [class="Geeqie"] fullscreen
-for_window [class="Gnome-terminal"] layout tabbed
+#for_window [class="Gnome-terminal"] layout tabbed
+for_window [class="MPlayer"] floating enable
 
 # initial apps:
-exec /bin/nm-applet
-exec gsettings-data-convert
-exec abrt-applet
-exec nautilus --no-default-window --no-desktop
-exec krb5-auth-dialog --auto
-exec dropbox start -i
-exec start-pulseaudio-x11
-exec /usr/bin/volumeicon
-exec /usr/bin/parcellite
-#exec batti

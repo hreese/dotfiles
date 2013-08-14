@@ -30,14 +30,28 @@ ulimit -c unlimited
 # start d-bus
 eval $(dbus-launch --sh-syntax)
 
+# gnome-settings
+/usr/libexec/gnome-settings-daemon &
+
 # start gnome-keyring-daemon
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,ssh,gpg | sed -e 's/^/export /g' -e 's/$/;/g')
 
 #set xkbmap
 #setxkbmap de
 
+nm-applet &
+gsettings-data-convert &
+abrt-applet &
+nautilus --no-default-window --no-desktop &
+krb5-auth-dialog --auto &
+dropbox start -i &
+start-pulseaudio-x11 &
+volumeicon &
+parcellite &
+dunst &
+
 # Start i3 and log to ~/.i3/logfile
 echo "Starting at $(date)" >> ~/.i3/logfile
 #exec /usr/bin/i3 -V -d all >> ~/.i3/logfile
 
-exec /usr/bin/i3 -V >> ~/.i3/logfile
+exec /usr/bin/i3 >> ~/.i3/logfile

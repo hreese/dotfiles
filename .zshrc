@@ -50,7 +50,7 @@ unsetopt correct_all
 alias lsh='ls -lthr'
 
 # Solarized colors
-eval $(dircolors ~/.dir_colors)
+#eval $(dircolors ~/.dir_colors)
 
 if [ -e ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then
     . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
