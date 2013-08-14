@@ -39,14 +39,16 @@ export MANPATH=/usr/local/texlive/2012/texmf/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2012/texmf/doc/info:$INFOPATH
 
 # Google Go
-if [ -d "${HOME}/go" ]; then
-    export GOROOT=${HOME}/go
-    export GOBIN=${GOROOT}/bin
-    export GOOS=linux
-    export GOARCH=amd64
-    export PATH=${PATH}:${GOBIN}
-    export GOPATH=$HOME/go.heiko
-fi
+#if [ -d "${HOME}/go" ]; then
+#    export GOROOT=${HOME}/go
+#    export GOBIN=${GOROOT}/bin
+#    export GOOS=linux
+#    export GOARCH=amd64
+#    export PATH=${PATH}:${GOBIN}
+#    export GOPATH=$HOME/go.heiko
+#fi
+
+export PATH=/usr/local/go/bin:$PATH
 
 # 256 colors
 if [ -e /lib/terminfo/x/xterm-256color -o -e /usr/share/terminfo/x/xterm-256color ]; then
