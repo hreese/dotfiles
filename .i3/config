@@ -89,9 +89,9 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1: www
+bindsym $mod+1 workspace 1: mail
 bindsym $mod+2 workspace 2: chat
-bindsym $mod+3 workspace 3
+bindsym $mod+3 workspace 3: www
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -101,9 +101,9 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10: music
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1: www
+bindsym $mod+Shift+1 move container to workspace 1: mail
 bindsym $mod+Shift+2 move container to workspace 2: chat
-bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+3 move container to workspace 3: www
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -164,9 +164,9 @@ bar {
 }
 
 # screen setup (phobos)
-workspace "1: www" output DFP10
+workspace "1: mail" output DFP10
 workspace "2: chat" output DFP9
-workspace "3" output DFP10
+workspace "3: www" output DFP10
 workspace "4" output DFP9
 workspace "5" output DFP10
 workspace "6" output DFP9
@@ -188,13 +188,17 @@ workspace_auto_back_and_forth yes
 # screenlock
 bindsym Mod1+Control+l exec i3lock -d -p win
 
-assign [class="^Pidgin$"] → 2
-assign [class="^psi$"] → 2
+assign [class="^Pidgin$"] → 2: chat
+assign [class="^psi$"] → 2: chat
+assign [class="^Thunderbird$"] → 1: mail
 
-
-for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 px or 20 ppt
-for_window [class="^psi$" window_role="main"] resize grow width 0 px or 20 ppt
+for_window [class="^Pidgin$" window_role="buddy_list"] focus; resize shrink width 50 ppt
+for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 px or 30 ppt
+for_window [class="psi" window_role="main"] focus; resize shrink width 50 ppt
+for_window [class="psi" window_role="tabs"] resize grow width 0 px or 30 ppt
 for_window [class="VirtualBox"] floating enable
+for_window [class="Geeqie"] fullscreen
+for_window [class="Gnome-terminal"] layout tabbed
 
 # initial apps:
 exec /bin/nm-applet
