@@ -91,10 +91,7 @@ Bundle 'samsonw/vim-task'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'sirtaj/vim-openscad'
-
-if has("python")
-    Bundle 'Lokaltog/vim-powerline'
-endif
+bling/vim-airline
 
 " vim.org
 Bundle 'Align'
